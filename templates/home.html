@@ -15,10 +15,12 @@
   </head>
   </head>
   <body>
+    {% include 'navbar.html' %}
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">{{company_name}} Carrers</h1>
+      <!-- <h1 class="text-center mt-2 mb-4">{{company_name}}</h1> -->
+      <marquee class="fs-5 mt-3 mb-3" behavior="scroll" scrollamount="12" direction="left">"Take the Next Step in Your Career: Browse Our Job Listings"</marquee>
       <img id="banner" class="img-fluid" src="static/banner.jpeg">
-      <h2 class="text-center mt-4">About Jovian</h2>
+      <h2 class="text-center mt-4">About Our Site</h2>
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
@@ -28,12 +30,13 @@
           {% include 'jobitem.html' %}
         {% endfor %}
       </div>
-      <div class="text-center mt-4">
+      <div class="text-center mt-4 mb-3">
         <div>
           <button class="btn btn-primary btn-lg">Contact Us</button>
         </div>
         <p>Copyright 2022</p>
         </div>
+      {% include 'footer.html' %}
   </div>
   </body>
 </html>

@@ -27,7 +27,7 @@ JOBS = [{
 
 @app.route('/')
 def hello_world():
-  return render_template('home.html', jobs=JOBS, company_name='Surendra')
+  return render_template('home.html', jobs=JOBS, company_name='CarrerConnect')
 
 
 @app.route('/api/jobs')
